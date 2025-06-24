@@ -2,7 +2,7 @@
 {
   // Mandatory fields
   "schemaVersion": 1,
-  "id": "",
+  "id": "bluearchiveschoolbanners",
   "version": "0.0.1",
 
   // Optional fields
@@ -17,14 +17,14 @@
   // "conflicts": {},
 
   // - Metadata
-  "name": "",
-  "description": "",
+  "name": "Blue Archive School Banners",
+  "description": "A simple mod that adds Kivotos schools/clubs from Blue Archive as banner patterns",
   "contact": {
-    "homepage": "https://modrinth.com/",
-    "sources": "https://github.com/",
-    "issues": "https://github.com//issues"
+    // "homepage": "https://modrinth.com/",
+    "sources": "https://github.com/Mango-Minecraft-Project/BlueArchiveSchoolBanners",
+    "issues": "https://github.com/Mango-Minecraft-Project/BlueArchiveSchoolBanners/issues"
   },
-  "authors": [""],
+  "authors": ["general_gunner", "EvanHsieh0415"],
   "contributors": [],
   "license": "AGPL-3.0",
   "icon": "pack.png"
