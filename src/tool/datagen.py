@@ -2,10 +2,11 @@ import json
 
 from global_variable import GENERATED, NAMESPACE, BANNER_PATTERN, COLORS, make_dir
 
-datapack = make_dir(make_dir(GENERATED / "data", rmdir=True) / NAMESPACE)
+DATA = make_dir(GENERATED / "data", rmdir=True)
+DATA_WITH_NAMESPACE = make_dir(DATA / NAMESPACE)
 
 with open(
-    make_dir(datapack / "minecraft/tags/banner_pattern") / "no_item_required.json",
+    make_dir(DATA / "minecraft/tags/banner_pattern") / "no_item_required.json",
     "w",
     encoding="utf-8",
 ) as file:
@@ -21,7 +22,7 @@ with open(
 
 for pattern in BANNER_PATTERN:
     with open(
-        make_dir(datapack / "banner_pattern") / f"{pattern}.json",
+        make_dir(DATA_WITH_NAMESPACE / "banner_pattern") / f"{pattern}.json",
         "w",
         encoding="utf-8",
     ) as file:
@@ -35,10 +36,10 @@ for pattern in BANNER_PATTERN:
             ensure_ascii=False,
         )
 
-resourcepack = make_dir(make_dir(GENERATED / "assets", rmdir=True) / NAMESPACE)
+RESOURCE_WITH_NAMESPACE = make_dir(make_dir(GENERATED / "assets", rmdir=True) / NAMESPACE)
 
 with open(
-    make_dir(resourcepack / "lang") / "en_us.json", "w", encoding="utf-8"
+    make_dir(RESOURCE_WITH_NAMESPACE / "lang") / "en_us.json", "w", encoding="utf-8"
 ) as file:
     json.dump(
         {

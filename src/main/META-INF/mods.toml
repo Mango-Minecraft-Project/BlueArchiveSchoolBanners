@@ -4,7 +4,7 @@ modLoader = "lowcodefml"
 loaderVersion = "[1,)" # https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
 
 license = "AGPL-3.0"
-issueTrackerURL = "https://github.com/BlueArchiveSchoolBanners/issues"
+issueTrackerURL = "https://github.com/Mango-Minecraft-Project/BlueArchiveSchoolBanners/issues"
 
 [[mods]]
 modId = "bluearchiveschoolbanners"
