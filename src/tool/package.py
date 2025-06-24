@@ -1,9 +1,8 @@
 import zipfile
 import tomllib
+import json
 from typing import Literal
 from pathlib import Path
-
-import pyjson5
 
 from global_variable import CWD, MAIN, GENERATED
 
@@ -20,7 +19,7 @@ def get_metadata():
             return ("neoforge", tomllib.load(file))
     elif (fabric_metadata := MAIN / "fabric.mod.json").is_file():
         with fabric_metadata.open("r", encoding="utf-8") as file:
-            return ("fabric", pyjson5.loads(file.read()))
+            return ("fabric", json.load(file))
     else:
         raise FileNotFoundError(
             "No metadata file found. Please ensure META-INF/mods.toml, META-INF/neoforge.mods.toml or fabric.mod.json exists."
