@@ -1,26 +1,13 @@
-// https://wiki.fabricmc.net/documentation:fabric_mod_json
 {
-  // Mandatory fields
   "schemaVersion": 1,
   "id": "bluearchiveschoolbanners",
   "version": "0.0.1",
 
-  // Optional fields
-  // - Mod Loading
-  "environment": "*", // client, server, or * (both client and server). default: *
+  "environment": "*",
 
-  // - Dependency resolution
-  "depends": {},
-  // "recommends": {},
-  // "suggests": {},
-  // "breaks": {},
-  // "conflicts": {},
-
-  // - Metadata
   "name": "Blue Archive School Banners",
   "description": "A simple mod that adds Kivotos schools/clubs from Blue Archive as banner patterns",
   "contact": {
-    // "homepage": "https://modrinth.com/",
     "sources": "https://github.com/Mango-Minecraft-Project/BlueArchiveSchoolBanners",
     "issues": "https://github.com/Mango-Minecraft-Project/BlueArchiveSchoolBanners/issues"
   },
